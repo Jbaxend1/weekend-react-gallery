@@ -1,5 +1,4 @@
-![License](https://img.shields.io/github/license/jbaxend1/https://github.com/Jbaxend1.svg?style=for-the-badge) ![Repo Size](https://img.shields.io/github/languages/code-size/jbaxend1/https://github.com/Jbaxend1.svg?style=for-the-badge) ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/jbaxend1/https://github.com/Jbaxend1.svg?style=for-the-badge) ![FORKS](https://img.shields.io/github/forks/jbaxend1/https://github.com/Jbaxend1.svg?style=for-the-badge&social) ![Stars](https://img.shields.io/github/stars/jbaxend1/https://github.com/Jbaxend1.svg?style=for-the-badge)
-    
+
 # Weekend React Gallery
 
 ## Table of Contents
@@ -37,7 +36,6 @@ Node
 React
 
 
-
 ### Installation
 
 npm install
@@ -49,15 +47,10 @@ npm run client
 
 Run both the server and client to view the UI. Then navigate through the gallery.
 
-
-## License
-
-<a href="https://choosealicense.com/licenses/apache-2.0/"><img src="https://raw.githubusercontent.com/johnturner4004/readme-generator/master/src/components/assets/images/apache.svg" height=40 />Apache License 2.0</a>
-
 ## Acknowledgements
 
 Thank you to Chris and the staff at Prime Academy.
 
 ## Contacts
 
-<a href="https://www.linkedin.com/in/https://www.linkedin.com/in/jonathon-baxendell/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>  <a href="mailto:j.bax626@gmail.com"><img src=https://raw.githubusercontent.com/johnturner4004/readme-generator/master/src/components/assets/images/email_me_button_icon_151852.svg /></a>
+<a href="https://www.linkedin.com/in/jonathon-baxendell/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>  <a href="mailto:j.bax626@gmail.com"><img src=https://raw.githubusercontent.com/johnturner4004/readme-generator/master/src/components/assets/images/email_me_button_icon_151852.svg /></a>
