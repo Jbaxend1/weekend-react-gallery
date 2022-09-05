@@ -25,12 +25,14 @@ function App() {
     });
   }
 
+  
+
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">It's the Little Things</h1>
       </header>
-      <GalleryList galleryArray={galleryArray}/>
+      <GalleryList fetchGallery={fetchGallery} galleryArray={galleryArray}/>
     </div>
   );
 }

@@ -14,7 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import SendIcon from '@mui/icons-material/Send';
 
-function GalleryItem({ thing }) {
+function GalleryItem({ thing, addLike }) {
     const [toggle, setToggle] = useState(false);
 
     const showDes = () => {
@@ -43,6 +43,7 @@ function GalleryItem({ thing }) {
         }
     }
 
+
     return <Grid item xs={12} sm={4} key={thing.id}>
         <Card elevation={3}>
             <CardActionArea>
@@ -51,7 +52,7 @@ function GalleryItem({ thing }) {
                 <Typography>
                    {thing.likes}
                 </Typography>
-                <Fab size="small">
+                <Fab size="small" onClick={() => addLike(thing.id)}>
                     <FavoriteIcon />
                 </Fab>
                 <br />
