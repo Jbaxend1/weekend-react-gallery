@@ -12,32 +12,51 @@ import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import NavigationIcon from '@mui/icons-material/Navigation';
+import SendIcon from '@mui/icons-material/Send';
 
 function GalleryItem({ thing }) {
     const [toggle, setToggle] = useState(false);
 
     const showDes = () => {
         if (toggle === true) {
-            return <Typography>{thing.description}</Typography>
+            return <CardContent>
+                <Typography>{thing.description}</Typography>
+                <br />
+                <br />
+                <Button variant="contained" 
+                    size="small" 
+                    endIcon={<SendIcon />} onClick={() => setToggle()}>
+                        Back to Picture
+                </Button>
+            </CardContent>
         } else {
-            return <CardMedia
+            return <CardContent>
+                <CardMedia
             component="img"
             height="140"
             image={thing.path}
-        />
+            />
+            <br />
+            <br />
+            <Button variant="contained" size="small" onClick={() => setToggle(!toggle)}>Learn More</Button>
+            </CardContent>
         }
     }
 
     return <Grid item xs={12} sm={4} key={thing.id}>
         <Card elevation={3}>
             <CardActionArea>
-                <CardContent>
+               
                     {showDes()}
-                </CardContent>
-                <Fab>
+                <Typography>
+                   {thing.likes}
+                </Typography>
+                <Fab size="small">
                     <FavoriteIcon />
                 </Fab>
-                <Button onClick={() => setToggle(!toggle)}>Learn More</Button>
+                <br />
+                <br />
+                <br />
             </CardActionArea>
         </Card>
     </Grid>
