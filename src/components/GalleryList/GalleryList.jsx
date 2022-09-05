@@ -7,8 +7,10 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import NavigationIcon from '@mui/icons-material/Navigation';
 
 
 
@@ -33,9 +35,15 @@ function GalleryList({galleryArray}) {
                   <Typography>
                     {thing.likes}
                   </Typography>
-                  <Fab size="small" color="secondary">
-                    <FavoriteIcon />
-                  </Fab>
+                  <Box sx={{ '& > :not(style)': { m: 1 } }}>
+                    <Fab size="small" color="primary">
+                      <FavoriteIcon />
+                    </Fab>
+                    <Fab variant="extended" size="small" color="primary">
+                      <NavigationIcon />
+                      Picture
+                    </Fab>
+                  </Box>
                 </CardContent>
               </Card>
             </Grid>
