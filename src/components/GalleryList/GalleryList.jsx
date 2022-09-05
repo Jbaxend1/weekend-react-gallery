@@ -1,3 +1,4 @@
+
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardActions from '@mui/material/CardActions';
@@ -6,6 +7,9 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import Fab from '@mui/material/Fab';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+
 
 
 function GalleryList({galleryArray}) {
@@ -27,9 +31,11 @@ function GalleryList({galleryArray}) {
                     {thing.description}
                   </Typography>
                   <Typography>
-                    {thing.likes} Likes
+                    {thing.likes}
                   </Typography>
-                  <Button></Button>
+                  <Fab size="small" color="secondary">
+                    <FavoriteIcon />
+                  </Fab>
                 </CardContent>
               </Card>
             </Grid>
