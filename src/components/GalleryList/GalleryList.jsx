@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 
+
 function GalleryList({galleryArray}) {
     
     return <div>
@@ -25,6 +26,10 @@ function GalleryList({galleryArray}) {
                   <Typography>
                     {thing.description}
                   </Typography>
+                  <Typography>
+                    {thing.likes} Likes
+                  </Typography>
+                  <Button></Button>
                 </CardContent>
               </Card>
             </Grid>
