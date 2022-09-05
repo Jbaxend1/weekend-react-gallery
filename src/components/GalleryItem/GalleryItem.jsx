@@ -46,19 +46,21 @@ function GalleryItem({ thing, addLike }) {
 
     return <Grid item xs={12} sm={4} key={thing.id}>
         <Card elevation={3}>
-            <CardActionArea>
+            
                
                     {showDes()}
+                
+                <CardActions>
+                <Fab size="small" >
+                    <FavoriteIcon onClick={() => addLike(thing.id)}/>
+                </Fab>
                 <Typography>
                    {thing.likes}
                 </Typography>
-                <Fab size="small" onClick={() => addLike(thing.id)}>
-                    <FavoriteIcon />
-                </Fab>
                 <br />
                 <br />
                 <br />
-            </CardActionArea>
+            </CardActions>
         </Card>
     </Grid>
 }
