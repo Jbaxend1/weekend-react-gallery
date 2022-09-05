@@ -51,12 +51,14 @@ function GalleryItem({ thing, addLike }) {
                     {showDes()}
                 
                 <CardActions>
+                <Box sx={{ '& button': { m: 1 } }}>
                 <Fab size="small" >
                     <FavoriteIcon onClick={() => addLike(thing.id)}/>
                 </Fab>
                 <Typography>
                    {thing.likes}
                 </Typography>
+                </Box>
                 <br />
                 <br />
                 <br />
